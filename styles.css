@@ -212,6 +212,10 @@ h1 {
   line-height: 1.55;
 }
 
+.credentials span:not(:last-child)::after {
+  content: " | ";
+}
+
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -1083,6 +1087,27 @@ h1 {
   .principles-title,
   .project-identity h3 {
     font-size: 32px;
+  }
+
+  .hero-statement {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .hero-note {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .credentials {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .credentials span::after {
+    content: none;
   }
 
   .pin-runway {
