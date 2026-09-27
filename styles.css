@@ -132,7 +132,7 @@ ul {
   bottom: 0;
   width: 34px;
   height: 3px;
-  background: var(--lilac-line);
+  background: var(--gold);
   transform: translateX(-50%);
 }
 
@@ -194,6 +194,10 @@ h1 {
   font-size: 96px;
   line-height: 0.98;
   letter-spacing: -0.02em;
+}
+
+h1 strong {
+  font-weight: 700;
 }
 
 .gold {
@@ -657,7 +661,7 @@ h1 {
   width: 38px;
   height: 6px;
   border-radius: 999px;
-  background: var(--lilac-line);
+  background: var(--gold);
 }
 
 .profile-photo figcaption {
