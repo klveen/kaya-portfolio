@@ -94,7 +94,7 @@ ul {
   height: 34px;
   border-radius: 999px;
   background: var(--ink);
-  color: var(--lilac);
+  color: var(--gold);
   display: grid;
   place-items: center;
   font-size: 11px;
@@ -239,9 +239,10 @@ h1 strong {
 
 .hero-media {
   display: grid;
-  grid-template-columns: 1.96fr 1fr;
+  grid-template-columns: auto 1fr;
   gap: 16px;
   height: 560px;
+  align-items: stretch;
 }
 
 .portrait,
@@ -256,10 +257,8 @@ h1 strong {
 .portrait {
   position: relative;
   margin: 0;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
+  aspect-ratio: 1;
   color: white;
 }
 
@@ -1014,6 +1013,12 @@ h1 strong {
   .profile-photo,
   .project-media {
     min-height: 460px;
+  }
+
+  .portrait {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1;
   }
 
   .profile-visual {
