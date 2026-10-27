@@ -258,7 +258,7 @@ h1 strong {
   position: relative;
   margin: 0;
   height: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1024 / 682;
   color: white;
 }
 
@@ -1018,7 +1018,7 @@ h1 strong {
   .portrait {
     height: auto;
     min-height: 0;
-    aspect-ratio: 1;
+    aspect-ratio: 1024 / 682;
   }
 
   .profile-visual {
